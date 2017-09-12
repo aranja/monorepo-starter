@@ -1,0 +1,31 @@
+{
+  "name": "starter",
+  "private": true,
+  "engines": {
+    "node": "^8.0.0",
+    "yarn": "^1.0.0"
+  },
+  "scripts": {
+    "heroku-postbuild": "scripts/heroku-postbuild.sh",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.1.2",
+    "prettier": "^1.6.1"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}

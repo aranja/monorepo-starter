@@ -1,0 +1,31 @@
+{
+  "name": "starter-website",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "starter-components": "1.0.0",
+    "react": "16.0.0-beta.5",
+    "react-async-bootstrapper": "^1.1.1",
+    "react-async-component": "^1.0.0-beta.3",
+    "react-chain": "^0.4.3",
+    "react-dom": "16.0.0-beta.5",
+    "react-helmet": "^5.2.0",
+    "react-jobs": "^1.0.0-beta.3",
+    "react-router-dom": "^4.2.2",
+    "styled-components": "^2.1.2",
+    "tux-scripts": "^0.3.0"
+  },
+  "scripts": {
+    "start": "tux-scripts start",
+    "build": "tux-scripts build",
+    "serve": "tux-scripts serve",
+    "heroku-postbuild": "yarn build",
+    "heroku-start": "yarn serve -- --options.host 0.0.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.2.0",
+    "eslint-config-prettier": "^2.4.0",
+    "neutrino-middleware-compile-loader": "^6.1.5",
+    "neutrino-preset-airbnb": "^3.0.0"
+  }
+}
