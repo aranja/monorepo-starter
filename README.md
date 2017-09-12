@@ -1,6 +1,6 @@
 # Monorepo Starter
 
-This is a React monorepo using tux and yarn workspaces:
+This is a React monorepo using [tux](https://github.com/aranja/tux/) and yarn workspaces:
 
 ```
 monorepo-starter
